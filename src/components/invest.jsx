@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import  { useEffect } from 'react';
 import $ from 'jquery';
 import React from 'react';
+import AnimatedCounter from './AnimatedCount';
 
 const Section = styled.div `
     text-align: center;
@@ -94,7 +95,7 @@ export default function Invest() {
           if (a === 0 && $(window).scrollTop() > oTop) {
             $('.counter-value').each(function () {
               const $this = $(this);
-              const countTo = parseInt($this.attr('data-count') as string, 10);
+              const countTo = parseInt($this.attr('data-count'), 10);
                 
               $({ countNum: parseInt($this.text(), 10) }).animate(
                 { countNum: countTo },

@@ -94,6 +94,7 @@ export default function Services() {
           $(window).off('scroll', onScroll);
         };
       }, []);
+      
 
     return(
         <Section>
