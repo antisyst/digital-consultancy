@@ -1,18 +1,28 @@
-import Navbar from "./navbar"
+import Navbar from "./components/navbar";
+import Showcase from "./components/showcase";
+import Transform from "./components/transform";
+import Services from "./components/services";
+import Invest from "./components/invest";
+import Questions from "./components/questions";
+import Clients from "./components/clients";
+import Footer from "./components/footer";
 function App() {
   return (
     <>
-     <Navbar/>
-     <div className="creator-content">
-      <h2>Developed by <a href="https://rmzn.netlify.app">Ramazan Azimli</a></h2>
-     </div>
+      <Navbar />
+      <Showcase/>
+      <Transform/>
+      <Services/>
+      <Invest/>
+      <Questions/>
+      <Clients/>
+      <Footer/>
     </>
-  )
+  );
 }
 
 export default App;
 
 // imagine shooting a man with your last bullet and he stands there  UNFAZED
 
-   //                                                    Andrew Tate                                                   
-
+//                                                    Andrew Tate
